@@ -22,7 +22,7 @@ class index:
 
         # again make a get request
         r = s.get('https://abdollah-prjt.herokuapp.com/',timeout=1)
-        r = s.get('http://127.0.0.1:1234/',timeout=1)
+        r = s.get('www.google.com',timeout=1)
 
         # check if cookie is still set
         #response = requests.get('http://127.0.0.1:8080/')
