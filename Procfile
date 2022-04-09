@@ -1,1 +1,1 @@
-web: gunicorn --chdir khzm1:app
+web: gunicorn khzm1:app --log-file -
