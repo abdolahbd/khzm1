@@ -3,6 +3,7 @@ import time
 import web
 from urllib.request import urlopen
 import requests
+os.environ["PORT"] = "1245"
 
 urls = (
     '/', 'index'
