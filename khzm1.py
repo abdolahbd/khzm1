@@ -20,8 +20,14 @@ class index:
 
 
         # again make a get request
-        r = s.get('https://abdollah-prjt.herokuapp.com/',timeout=1)
-        r = s.get('http://e02a-105-67-3-223.ngrok.io',timeout=1)
+        try:
+            r = s.get('https://abdollah-prjt.herokuapp.com/',timeout=1)
+        except:
+            pass
+        try:
+            r = s.get('http://e02a-105-67-3-223.ngrok.io',timeout=1)
+        except:
+            pass
 
         # check if cookie is still set
         #response = requests.get('http://127.0.0.1:8080/')
