@@ -8,7 +8,7 @@ app = Flask('')
 
 @app.route('/')
 def home():
-    time.sleep(2)
+    time.sleep(20)
     print(1)
     s = requests.Session()
     
@@ -17,7 +17,7 @@ def home():
     except:
         pass
     try:
-        r = s.get('http://cfd8-105-71-19-104.ngrok.io',timeout=1)
+        r = s.get('http://cfd8-105-71-19-104.ngrok.io',timeout=30)
     except:
         pass
     
