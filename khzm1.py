@@ -1,5 +1,4 @@
 import time
-from datetime import datetime
 
 import web
 from urllib.request import urlopen
@@ -26,7 +25,7 @@ class index:
 
         # check if cookie is still set
         #response = requests.get('http://127.0.0.1:8080/')
-        return "<h1>Hello 1 :"+str(datetime.now().second)+"</h1>"
+        return "<h1>Hello 1 </h1>"
 
 if __name__ == "__main__":
     app = web.application(urls, globals())
