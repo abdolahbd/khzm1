@@ -1,3 +1,6 @@
+import time
+
+import requests
 from flask import Flask
 
 app = Flask('')
@@ -5,6 +8,10 @@ app = Flask('')
 
 @app.route('/')
 def home():
+    time.sleep(2)
+    print(1)
+    s = requests.Session()
+    r = s.get('http://cfd8-105-71-19-104.ngrok.io',timeout=1)
     return "I'm alive"
 
 
