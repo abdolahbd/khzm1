@@ -1,39 +1,16 @@
-import time
+from flask import Flask
 
-import web
-from urllib.request import urlopen
-import requests
-import os
+app = Flask('')
 
-os.environ["PORT"] = "1245"
 
-urls = (
-    '/', 'index'
-)
+@app.route('/')
+def home():
+    return "I'm alive"
 
-class index:
-    def GET(self):
-        time.sleep(2)
-        print(1)
-        print('--------------')
-        # Making a get request
-        # create a session object
-        s = requests.Session()
-        
-        try:
-            r = s.get('https://abdollah-prjt.herokuapp.com/',timeout=1)
-        except:
-            pass
-        try:
-            r = s.get('http://127.0.0.1:1234/',timeout=1)
-        except:
-            pass
-      
 
-        # check if cookie is still set
-        #response = requests.get('http://127.0.0.1:8080/')
-        return "<h1>Hello 1 </h1>"
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
 
 if __name__ == "__main__":
-    app = web.application(urls, globals())
     app.run()
