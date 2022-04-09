@@ -17,7 +17,7 @@ def home():
     except:
         pass
     try:
-        r = s.get('http://cfd8-105-71-19-104.ngrok.io',timeout=30)
+        r = s.get('http://da26-105-71-19-104.ngrok.io',timeout=30)
     except:
         pass
     
