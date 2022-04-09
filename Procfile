@@ -1,1 +1,1 @@
-web: gunicorn khzm1
+web: gunicorn khzm1:app
