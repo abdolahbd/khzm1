@@ -1,16 +1,24 @@
-from flask import Flask
+import time
+from datetime import datetime
 
-app = Flask('')
+import web
+from urllib.request import urlopen
+import requests
 
+urls = (
+    '/', 'index'
+)
 
-@app.route('/')
-def home():
-    return "I'm alive"
+class index:
+    def GET(self):
+        time.sleep(2)
+        print(1)
+        print('--------------')
+        # Making a get request
+        # create a session object
 
-
-def run():
-    app.run(host='0.0.0.0', port=8080)
-
+        return "<h1>Hello 1 :"+str(datetime.now().second)+"</h1>"
 
 if __name__ == "__main__":
+    app = web.application(urls, globals())
     app.run()
