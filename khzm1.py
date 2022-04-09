@@ -11,7 +11,7 @@ app = Flask('')
 
 @app.route('/')
 def home():
-    time.sleep(100)
+    time.sleep(5)
     print(1)
     s = requests.Session()
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0'}
