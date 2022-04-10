@@ -18,7 +18,11 @@ def home():
         r = s.get('https://khzm2.herokuapp.com/',headers=headers)
     except:
         pass
-
+    try:
+        r = s.get('https://khzm3.herokuapp.com/',headers=headers)
+    except:
+        pass
+    
     return "I'm alive"
 
 
