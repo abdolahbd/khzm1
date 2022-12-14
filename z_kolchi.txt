@@ -3853,6 +3853,9 @@ Guelmim
 Taroudant
 OuledTeima
 SidiIfni
+IFNI
+Ifni
+ifni
 Inzegane
 Tiznit
 Tata
