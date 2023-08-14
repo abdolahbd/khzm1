@@ -2275,6 +2275,12 @@ hafssa
 Ama
 AMA
 ama
+Jad
+JAD
+jad
+Jaad
+JAAD
+jaad
 Cours
 COURS
 cours
